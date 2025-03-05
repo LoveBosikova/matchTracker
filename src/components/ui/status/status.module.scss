@@ -1,0 +1,66 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+
+
+.statusFinished {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .225vw;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 100%;
+    background-color: $status-finished;
+
+    & .text {
+        width: fit-content;
+        min-width: fit-content;
+        font-weight: 600;
+        font-size: $font-size-12;
+        color: $white-text-default;
+        text-align: center;
+        white-space: nowrap;
+    }
+}
+
+.statusOngoing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .225vw 1.8vw;
+    border-radius: 4px;
+    width: fit-content;
+    min-width: fit-content;
+    background-color: $status-live;
+
+    & .text {
+        width: fit-content;
+        min-width: fit-content;
+        font-weight: 600;
+        font-size: $font-size-12;
+        color: $white-text-default;
+        text-align: center;
+        white-space: nowrap;
+    }
+}
+
+.statusScheduled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .225vw;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 100%;
+    background-color: $status-preparing;
+
+    & .text {
+        width: 100%;
+        max-width: 100%;
+        font-weight: 600;
+        font-size: $font-size-12;
+        color: $white-text-default;
+        text-align: center;
+        white-space: nowrap;
+    }
+}

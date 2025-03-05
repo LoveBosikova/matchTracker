@@ -1,0 +1,30 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+
+.button {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5%;
+    padding: 0.68vw;
+    background-color: $btn-default;
+    color: $white-text-bold;
+    border-radius: $button-border;
+    font-size: $font-size-18;
+    font-weight: 600;
+
+    &:disabled {
+        background-color: $btn-disabled;
+    }
+
+    &:active {
+        background-color: $btn-pressed;
+    }
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}

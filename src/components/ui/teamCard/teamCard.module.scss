@@ -1,0 +1,34 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+
+.teamCard {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8%;
+}
+
+.teamCardReverse {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 8%;
+}
+
+.imgWrap {
+    width: 30%;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.text {
+    font-weight: 600;
+    font-size: $font-size-16;
+    color: $white-text-bold;
+}

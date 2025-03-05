@@ -1,0 +1,15 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+
+.score {
+    width: 100%;
+    max-width: 100%;
+}
+
+.text {
+    font-weight: 600;
+    font-size: $font-size-20;
+    color: $white-text-bold;
+    text-align: center;
+    white-space: nowrap;
+}

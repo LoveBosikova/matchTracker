@@ -1,0 +1,33 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+
+.matchCard {
+    background-color: $back-card;
+    color: $white-text-default;
+    font-size: $font-size-18;
+    padding: .7vw 2.2vw;
+    padding-bottom: .8vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-radius: 4px;
+}
+
+.matchPreview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teamWrap {
+    width: 9%;
+}
+
+.mainInfo {
+    width: 6%;
+}
+
+.statusWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

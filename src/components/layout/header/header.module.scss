@@ -1,0 +1,24 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.12vw;
+}
+
+.logoWrap {
+    padding-left: 2.2vw;
+}
+
+.errorWrap {
+    width: 25%;
+    margin-right: .8vw;
+    margin-left: auto;
+    display: flex;
+    align-content: end;
+}
+
+.btnWrap {
+    width: 10.5%;
+    padding-right: 2.2vw;
+}

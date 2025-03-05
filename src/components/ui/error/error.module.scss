@@ -1,0 +1,29 @@
+
+@import '../../../styles/colors.scss';
+@import '../../../styles/variables.scss';
+
+.error {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding: .5vw;
+    background-color: $back-card;
+    border-radius: $button-border;
+}
+
+.text {
+    font-weight: 500;
+    font-size: $font-size-18;
+}
+
+.imgWrap {
+    width: 6.3%;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}
