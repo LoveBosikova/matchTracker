@@ -1,0 +1,329 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'Evolventa Bold';
+    src: local('Evolventa-Bold'), 
+        url('/fonts/Evolventa-Bold.ttf') format('truetype'),
+        url('/fonts/Evolventa-Bold.otf') format('otf'),
+        url('/fonts/Evolventa-Bold.woff') format('woff'),
+        url('/fonts/Evolventa-Bold.svg') format("svg");
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Allison Script';
+    src: local('Allison Script'), 
+        url('/fonts/allison_script.ttf') format('truetype'),
+        url('/fonts/allison_script.otf') format('otf');
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+}
+
+@mixin evolventa-700-111 {
+    font-family: "Evolventa Bold", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 700;
+    font-size: $font-size-111;
+}
+
+
+@mixin evolventa-700-75 {
+    font-family: "Evolventa Bold", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 700;
+    font-size: $font-size-75;
+}
+
+@mixin evolventa-700-64 {
+    font-family: "Evolventa Bold", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 700;
+    font-size: $font-size-64;
+}
+
+@mixin evolventa-700-38 {
+    font-family: "Evolventa Bold", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 700;
+    font-size: $font-size-38;
+    
+    @media (min-width: 720px) and (max-width: 1140px) {
+        font-size: $font-size-45;
+    }
+}
+
+@mixin evolventa-700-25 {
+    font-family: "Evolventa Bold", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 700;
+    font-size: $font-size-25;
+}
+
+@mixin evolventa-400-18 {
+    font-family: "Evolventa Bold", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-18;
+
+    @media (max-width: 720px) {
+        font-size: $font-size-22;
+    }
+}
+
+@mixin evolventa-400-14 {
+    font-family: "Evolventa Bold", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-14;
+}
+
+@mixin evolventa-400-11 {
+    font-family: "Evolventa Bold", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-11;
+}
+
+@mixin allison-400-64 {
+    font-family: "Allison Script", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-64;
+}
+
+@mixin allison-400-96 {
+    font-family: "Allison Script", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-96;
+}
+
+@mixin allison-400-100 {
+    font-family: "Allison Script", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-100;
+}
+
+@mixin allison-400-128 {
+    font-family: "Allison Script", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-128;
+}
+
+@mixin allison-400-256 {
+    font-family: "Allison Script", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-256;
+}
+
+@mixin onest-500-12 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 500;
+    font-size: $font-size-12;
+}
+
+@mixin onest-500-14 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 500;
+    font-size: $font-size-14;
+}
+
+@mixin onest-500-18 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 500;
+    font-size: $font-size-18;
+}
+
+@mixin onest-500-20 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 500;
+    font-size: $font-size-20;
+}
+
+@mixin onest-500-23 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 500;
+    font-size: $font-size-23;
+}
+
+
+@mixin onest-500-28 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 500;
+    font-size: $font-size-28;
+}
+
+@mixin onest-500-34 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 500;
+    font-size: $font-size-34;
+}
+
+@mixin onest-400-45 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-45;
+}
+
+@mixin onest-400-34 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-34;
+}
+
+@mixin onest-400-28 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-28;
+}
+
+@mixin onest-400-24 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-24;
+}
+
+@mixin onest-400-22 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-22;
+}
+
+@mixin onest-400-20 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-20;
+}
+
+@mixin onest-400-18 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-18;
+
+    @media (min-width: 720px) and (max-width: 1140px) {
+        font-size: $font-size-28;
+    }
+}
+
+@mixin onest-400-14 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-14;
+
+    @media (min-width: 720px) and (max-width: 1140px) {
+        font-size: $font-size-22;
+    }
+}
+
+@mixin onest-400-13 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-13;
+
+    @media (min-width: 720px) and (max-width: 1140px) {
+        font-size: $font-size-22;
+    }
+}
+
+@mixin onest-400-12 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-12;
+}
+
+@mixin onest-400-11 {
+    font-family: "Onest", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $font-size-11;
+
+    @media (min-width: 720px) and (max-width: 1140px) {
+        font-size: $font-size-20;
+    }
+}

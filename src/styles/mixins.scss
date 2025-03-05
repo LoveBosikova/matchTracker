@@ -1,0 +1,8 @@
+@import 'fonts.scss';
+
+@mixin transparentBlock {
+    position: absolute;
+    background-color: $beige-transparent;
+    backdrop-filter: blur(2rem);
+    border-radius: 1.3rem;
+}
