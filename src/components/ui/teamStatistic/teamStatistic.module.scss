@@ -41,3 +41,57 @@
     padding-top: .7vw;
     padding-left: 2%;
 }
+
+@media (max-width: 1240px) {
+    .text {
+        font-size: $font-size-24;
+    }
+    
+    .number {
+        font-size: $font-size-24;
+    }
+}
+
+@media (max-width: 800px) {
+    .usersWrap {
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .userWrap {
+        width: 85%;
+    }
+
+    .text {
+        font-size: $font-size-34;
+    }
+    
+    .number {
+        font-size: $font-size-34;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .pointsWrap {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .usersWrap {
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .userWrap {
+        width: 95%;
+    }
+
+    .text {
+        font-size: $font-size-40;
+    }
+    
+    .number {
+        font-size: $font-size-40;
+    }
+}

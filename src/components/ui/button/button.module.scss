@@ -49,3 +49,24 @@
     max-width: 100%;
     transition: $transition-appearance;
 }
+
+@media (max-width: 1240px) {
+    .button {
+        font-size: $font-size-24;
+        padding: 1vw 2vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .button {
+        font-size: $font-size-30;
+        padding: 1.5vw 2vw;
+    }
+}
+
+@media (max-width: 540px) {
+    .button {
+        font-size: $font-size-44;
+        padding: 3vw 2vw;
+    }
+}

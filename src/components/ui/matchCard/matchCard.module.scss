@@ -78,3 +78,60 @@
 .statisticWrap {
     width: 48%;
 }
+
+@media (max-width: 1240px) {
+    .teamWrap {
+        width: 15%;
+    }
+
+    .mainInfo {
+        width: 10%;
+    }
+
+    .btnWrap {
+        width: 3%;
+    }
+    
+    .btnWrapUp {
+        width: 3%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .matchCard {
+        padding: 1.5vw 2.2vw;
+    }
+    .teamWrap {
+        width: 30%;
+    }
+
+    .mainInfo {
+        width: 20%;
+    }
+
+    .btnWrap {
+        width: 4%;
+    }
+    
+    .btnWrapUp {
+        width: 4%;
+    }
+}
+
+@media (max-width: 540px) {
+    .matchCard {
+        padding: 3vw 4vw;
+    }
+    .teamWrap {
+        width: 37%;
+    }
+
+    .btnWrap {
+        width: 5%;
+    }
+    
+    .btnWrapUp {
+        width: 5%;
+    }
+}

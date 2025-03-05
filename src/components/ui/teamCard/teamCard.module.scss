@@ -32,3 +32,22 @@
     font-size: $font-size-16;
     color: $white-text-bold;
 }
+
+@media (max-width: 1240px) {
+    .text {
+        font-size: $font-size-24;
+    }
+}
+
+@media (max-width: 800px) {
+    .text {
+        font-size: $font-size-34;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .text {
+        font-size: $font-size-40;
+    }
+}

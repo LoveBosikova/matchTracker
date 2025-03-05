@@ -50,3 +50,53 @@
     font-size: $font-size-16;
     color: $white-text-bold;
 }
+
+@media (max-width: 1240px) {
+    .userName,
+    .killCount,
+    .text {
+        font-size: $font-size-24;
+    }
+
+    .userCard {
+        flex-direction: column;
+    }
+
+    .userStatisticWrap {
+        width: 58%;
+    }
+}
+
+@media (max-width: 800px) {
+    .userCard {
+        flex-direction: row;
+        gap: 5%;
+        padding: 2vw;
+    }
+
+    .imgWrap {
+        width: 30%;
+    }
+
+    .userName,
+    .killCount {
+        font-size: $font-size-34;
+    }
+
+    .text {
+        font-size: $font-size-30;
+    }
+}
+
+
+@media (max-width: 540px) {
+
+    .userName,
+    .killCount {
+        font-size: $font-size-44;
+    }
+
+    .text {
+        font-size: $font-size-40;
+    }
+}

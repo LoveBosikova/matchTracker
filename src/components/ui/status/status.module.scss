@@ -64,3 +64,84 @@
         white-space: nowrap;
     }
 }
+
+@media (max-width: 1240px) {
+    
+.statusFinished {
+    padding: .5vw 1vw;
+    & .text {
+        font-size: $font-size-18;
+    }
+}
+
+.statusOngoing {
+    padding: .5vw 1vw;
+    & .text {
+        font-size: $font-size-18;
+    }
+}
+
+.statusScheduled {
+    padding: .5vw 2vw;
+    white-space: nowrap;
+
+    & .text {
+        font-size: $font-size-18;
+    }
+}
+}
+
+@media (max-width: 800px) {
+    
+.statusFinished {
+    padding: 1vw 2vw;
+
+    & .text {
+        font-size: $font-size-30;
+    }
+}
+
+.statusOngoing {
+    padding: 1vw 2vw;
+
+    & .text {
+        font-size: $font-size-30;
+    }
+}
+
+.statusScheduled {
+    padding: 1vw 2vw;
+
+    & .text {
+        font-size: $font-size-30;
+    }
+}
+}
+
+@media (max-width: 540px) {
+
+    .statusFinished {
+        padding: 2vw 2vw;
+    
+        & .text {
+            font-size: $font-size-40;
+        }
+    }
+    
+    .statusOngoing {
+        padding: 1vw 2vw;
+    
+        & .text {
+            font-size: $font-size-40;
+        }
+    }
+    
+    .statusScheduled {
+        padding: 1vw 2vw;
+    
+        & .text {
+            white-space: wrap;
+            font-size: $font-size-40;
+        }
+    }
+}

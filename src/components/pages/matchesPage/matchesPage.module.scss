@@ -6,3 +6,17 @@
     gap: 0.5vw;
     margin-top: 1vw;
 }
+
+@media (max-width: 800px) {
+    .matchesPage {
+        gap: 3.5vw;
+        margin-top: 8vw;
+    }
+}
+
+@media (max-width: 540px) {
+    .matchesPage {
+        gap: 8vw;
+        margin-top: 15vw;
+    }
+}

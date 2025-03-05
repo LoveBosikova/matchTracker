@@ -14,3 +14,30 @@
     white-space: nowrap;
     color: $white-text-bold;
 }
+
+@media (max-width: 1240px) {
+    .text {
+        font-size: $font-size-24;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .score {
+        margin-bottom: 0.5vw;
+    }
+
+    .text {
+        font-size: $font-size-34;
+    }
+}
+
+@media (max-width: 540px) {
+    .score {
+        margin-bottom: 1vw;
+    }
+
+    .text {
+        font-size: $font-size-40;
+    }
+}

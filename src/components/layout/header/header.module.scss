@@ -22,3 +22,21 @@
     width: 10.5%;
     padding-right: 2.2vw;
 }
+
+@media (max-width: 1240px) {
+    .btnWrap {
+        width: 15.5%;
+    }
+}
+
+@media (max-width: 800px) {
+    .btnWrap {
+        width: 25.5%;
+    }
+}
+
+@media (max-width: 540px) {
+    .btnWrap {
+        width: 35.5%;
+    }
+}
