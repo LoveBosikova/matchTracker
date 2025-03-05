@@ -1,24 +1,27 @@
+import { useState } from 'react';
+
 import Score from '../score/score';
 import Status from '../status/status';
 import TeamCard from '../teamCard/teamCard';
+import TeamStatistic from '../teamStatistic/teamStatistic';
 
 import arrow from '../../../assets/arrow.svg';
 
 import style from './matchCard.module.scss';
-import { useState } from 'react';
-import TeamStatistic from '../teamStatistic/teamStatistic';
 
 function MatchCard (props) {
 
     const { match } = props
 
-    console.log(match);
+    const [isOpen, setIsOpen ] = useState(false)
 
-    const { isOpen, setIsOpen } = useState(true)
+    function handleIsOpen () {
+        setIsOpen(!isOpen)
+    }
 
     return (
             <li  className={style.matchCard}>
-                <div className={style.matchPreview}>
+                <div className={style.matchPreview} onClick={handleIsOpen}>
                     <div className={style.matchInfoWrap}>
                     <div className={style.teamWrap}>
                         <TeamCard team={match.awayTeam} flexReverse={false}/>
@@ -37,7 +40,7 @@ function MatchCard (props) {
                         <TeamCard team={match.homeTeam} flexReverse={true}/>
                     </div>
                     </div>
-                    <button className={style.btnWrap}>
+                    <button className={isOpen? style.btnWrap : style.btnWrapUp}>
                         {/* BtnUP-Down */}
                         <img className={style.img} src={arrow} alt={'Open/Closw match info'} />
                     </button>
@@ -46,7 +49,6 @@ function MatchCard (props) {
                     <div className={style.statisticWrap}>
                         <TeamStatistic team={match.awayTeam} />
                     </div>
-
                     <div className={style.statisticWrap}>
                         <TeamStatistic team={match.homeTeam} />
                     </div>

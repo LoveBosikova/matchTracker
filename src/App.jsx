@@ -12,12 +12,14 @@ function App() {
   return (
     <>
     {error ? (
-            <></>
+            <>
+              <Header isError={error}/> 
+            </>
         ) : isLoading ? (
-            <></>
+            <>...Loading</>
         ) : data ? 
         <>
-          <Header /> 
+          <Header isError={error}/> 
           <MatchesPage matches={data.data.matches}/>
         </>
         : 

@@ -2,18 +2,23 @@ import avatar from '../../../assets/avatar.png';
 
 import style from './userCard.module.scss'
 
-function userCard (props) {
-    const { team, flexReverse } = props
+function UserCard (props) {
 
-    // console.log(team);
+    const { user } = props
+
     return (
         <div className={style.userCard}>
-            <div className={style.imgWrap}>
-                <img className={style.img} src={logo} alt={team.name} />
+            <div className={style.userProfileWrap}>
+                <div className={style.imgWrap}>
+                    <img className={style.img} src={avatar} alt={''} />
+                </div>
+                <p className={style.userName}>{user.username}</p>
             </div>
-            <p className={style.text}>{team.name}</p>
+            <div className={style.userStatisticWrap}>
+                <p className={style.text}>Убийств: <span className={style.killCount}>{user.kills}</span></p>
+            </div>
         </div>
     )
 }
 
-export default TeamCard
+export default UserCard

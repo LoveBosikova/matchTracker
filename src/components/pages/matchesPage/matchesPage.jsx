@@ -5,7 +5,6 @@ import style from './matchesPage.module.scss';
 function MatchesPage (props) {
 
     const {matches} = props 
-    console.log(matches);
 
     return (<>
             <ul className={style.matchesPage}>

@@ -1,6 +1,17 @@
 @import '../../../styles/colors.scss';
 @import '../../../styles/variables.scss';
 
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .button {
     width: 100%;
     max-width: 100%;
@@ -14,17 +25,27 @@
     border-radius: $button-border;
     font-size: $font-size-18;
     font-weight: 600;
+    transition: $transition-appearance;
 
     &:disabled {
-        background-color: $btn-disabled;
+        background-color: rgba(112, 19, 40, 1) !important;
+        transition: $transition-disappearance;
     }
 
     &:active {
-        background-color: $btn-pressed;
+        background-color: rgba(160, 17, 49, 1);
+        transition: $transition-disappearance;
     }
+}
+
+.imgRotate {
+    width: 100%;
+    max-width: 100%;
+    animation: 3s linear infinite rotate;
 }
 
 .img {
     width: 100%;
     max-width: 100%;
+    transition: $transition-appearance;
 }

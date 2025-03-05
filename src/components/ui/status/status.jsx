@@ -5,7 +5,6 @@ import { STATUSES } from '../../../variables';
 function Status (props) {
 
     const { status } = props
-    console.log(status.toLowerCase(), STATUSES.finished.status);
 
     return (
         <>

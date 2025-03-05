@@ -20,6 +20,7 @@
 }
 
 .matchPreview {
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,6 +44,16 @@
     width: 1%;
     margin-right: .5%;
     margin-left: .5%;
+    transform: scaleY(1);
+    transition: $transition-appearance;
+}
+
+.btnWrapUp {
+    width: 1%;
+    margin-right: .5%;
+    margin-left: .5%;
+    transform: scaleY(-1);
+    transition: $transition-appearance;
 }
 
 .img {
@@ -52,11 +63,18 @@
 
 .cardFooterWrapClosed {
     display: none;
+    height: 0;
 }
 
 .cardFooterWrap {
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw;
+    padding: 2vw 1vw;
+    margin-right: auto;
+}
+
+.statisticWrap {
+    width: 48%;
 }

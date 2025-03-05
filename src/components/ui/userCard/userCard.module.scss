@@ -4,4 +4,49 @@
 .userCard {
     width: 100%;
     max-width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2%;
+    background-color: $user-back;
+    padding: .5vw;
+}
+
+.userProfileWrap {
+    width: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 9%;
+}
+
+.userStatisticWrap {
+    width: 40%;
+}
+
+.imgWrap {
+    width: 23%;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.userName {
+    font-weight: 600;
+    font-size: $font-size-16;
+    color: $white-text-bold;
+}
+
+.text {
+    font-weight: 500;
+    font-size: $font-size-14;
+    color: $white-text-default;
+}
+
+.killCount {
+    font-weight: 600;
+    font-size: $font-size-16;
+    color: $white-text-bold;
 }
